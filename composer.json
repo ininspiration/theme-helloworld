@@ -9,7 +9,7 @@
   ],
   "require": {
     "php": "~7.3.0",
-    "magento/theme-frontend-blank": "100.0.*"
+    "magento/theme-frontend-blank": "*"
   },
   "autoload": {
     "files": [
