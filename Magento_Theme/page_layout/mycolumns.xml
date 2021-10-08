@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <!--包含哪个父类配置-->
+    <!--handle = page_layout/文件名：2columns-left、2columns-right、3columns-->
+    <update handle="2columns-left"/>
+
+    <!--
+        这里的referenceContainer - name是引用，详见：
+        https://gist.github.com/joshfortyfour/11d0f7dbc7be9e85bf4e9c62c668f465
+    -->
+    <referenceContainer name="main.content">
+        <!--
+            name：必须是唯一的
+
+            before、after：
+                引用的是referenceContainer
+                不起作用的话，可以在layout/xx.xml用move标签
+
+            htmlTag：
+                可选的
+                生成的html标签，必须是以下的标签：
+                aside, dd, div, dl, fieldset, main, nav, header, footer, ol, p, section, table, tfoot, ul
+
+            htmlClass:
+                可选的
+                html标签的class属性
+        -->
+        <container name="my-div-1" as="my-div-1" before="div.messages" label="Footer Bottom" htmlTag="div" htmlClass="columns">
+            <!-- 引用layout/xx.xml中的referenceContainer(name属性) -->
+            <container name="my-columns" as="my-columns" />
+        </container>
+    </referenceContainer>
+</layout>

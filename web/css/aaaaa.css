@@ -1,0 +1,20 @@
+/*
+    .page-layout-{page_layout文件名}
+*/
+.page-layout-mycolumns .column.main {
+    width: 80%;
+    float: right;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+
+    background: red;
+}
+
+.page-layout-mycolumns .sidebar-additional {
+    clear: left;
+    float: left;
+    padding-left: 0;
+
+    background: blue;
+}

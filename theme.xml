@@ -1,0 +1,8 @@
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Huang Hstore</title>
+    <!-- 继承自哪个模板（会引用父模板的静态资源） -->
+    <parent>Magento/blank</parent>
+    <media>
+        <preview_image>media/preview.png</preview_image>
+    </media>
+</theme>

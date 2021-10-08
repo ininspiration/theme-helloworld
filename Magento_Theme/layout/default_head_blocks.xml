@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <css src="css/aaaaa.css"/>
+        <script defer="" src="js/bbbbb.js" />
+
+        <!-- 修改src、type、sizes -->
+        <!-- 图片保存在{theme}/Magento_Theme/web/下 -->
+        <link src="Magento_Theme::favicon.ico" rel="icon" type="image/x-icon" sizes="16x16"/>
+        <link src="Magento_Theme::favicon-32x32.ico" rel="icon" type="image/x-icon" sizes="32x32"/>
+    </head>
+</page>

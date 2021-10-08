@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!--
+        这里的referenceContainer - name是创建，不是引用。
+        name和as必须是字母开头，必须是唯一的
+    -->
+    <referenceContainer name="my-columns">
+        <!--
+        block
+            name，必须是唯一的
+            template，必填的，不然显示一片空白。在app/code下
+            class，这是可选的，指定Block。开头为Magento\Framework的话，代码在lib/internal下。
+        -->
+        <!--
+        单标签，无需传argument的话，用单标签即可。
+        <block class="Magento\Framework\View\Element\Template" name="report.bugs.bottom" template="Magento_Theme::html/bugreport.phtml"/>
+        -->
+        <block name="my-div-block" class="Huang\HelloWorld\Block\Mydiv" template="Huang_HelloWorld::mydiv.phtml" >
+            <arguments>
+                <!--
+                    传参给block
+                    block中用$this->getData({name})来获取数据。
+                -->
+                <argument name="css_class" xsi:type="string">header links</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+
+    <!-- 详情页，单独用一个referenceContainer -->
+    <referenceContainer name="product.info.main">
+        <block name="my-div-block-product" class="Huang\HelloWorld\Block\Mydiv" template="Huang_HelloWorld::mydiv.phtml" >
+            <arguments>
+                <argument name="css_class" xsi:type="string">product - info</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+    
+    <!--
+        设置logo
+        相对目录为{theme}/web
+    -->
+    <referenceBlock name="logo">
+        <arguments>
+            <argument name="logo_file" xsi:type="string">images/logo.jpg</argument>
+            <argument name="logo_width" xsi:type="number">200</argument>
+            <argument name="logo_height" xsi:type="number">200</argument>
+            <argument name="logo_alt" xsi:type="string">Logo name</argument>
+        </arguments>
+    </referenceBlock>
+</page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page_layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/PageLayout/etc/layouts.xsd">
+    <!-- id必须和page_layout文件名一样 -->
+    <layout id="mycolumns">
+        <!-- 显示的名字 -->
+        <label translate="true">my Columns</label>
+    </layout>
+</page_layouts>
