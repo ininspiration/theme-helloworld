@@ -1,7 +1,8 @@
 /*
     .page-layout-{page_layout文件名}
 */
-.page-layout-mycolumns .column.main {
+/* .page-layout-mycolumns .column.main { */
+.cms-home .column.main {
     width: 80%;
     float: right;
     -ms-flex-order: 2;
@@ -11,7 +12,8 @@
     background: red;
 }
 
-.page-layout-mycolumns .sidebar-additional {
+/* .page-layout-mycolumns .sidebar-additional { */
+.cms-home .sidebar-additional {
     clear: left;
     float: left;
     padding-left: 0;
